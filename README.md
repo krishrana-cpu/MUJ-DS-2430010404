@@ -9,6 +9,10 @@
 ## Capstone Project Title
 **Skin Disease Detection Using Convolutional Neural Networks**
 (custom CNN trained from scratch on the HAM10000 dataset)
+## Results
+
+*   **Test Accuracy:** 77.78%
+*   **Macro ROC-AUC:** 0.9321
 
 ## Repository Structure
 ```text
