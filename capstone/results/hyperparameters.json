@@ -1,0 +1,11 @@
+{
+  "learning_rate": 0.001,
+  "batch_size": 32,
+  "epochs": 25,
+  "optimizer": "Adam",
+  "loss_function": "CrossEntropyLoss",
+  "scheduler": "ReduceLROnPlateau (factor=0.5, patience=3)",
+  "dropout": 0.5,
+  "weight_decay": 0.0001,
+  "image_size": 128
+}

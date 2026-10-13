@@ -1,0 +1,37 @@
+DATASET INFORMATION
+====================
+
+Dataset Name: HAM10000 ("Human Against Machine with 10000 training images")
+Also known as: Skin Cancer MNIST
+
+Source: Kaggle
+URL: https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
+Original source: Harvard Dataverse (ViDIR Group, Medical University of Vienna)
+
+Total samples: ~10,015 dermatoscopic images
+
+Classes (7):
+  1. akiec - Actinic keratoses and intraepithelial carcinoma
+  2. bcc   - Basal cell carcinoma
+  3. bkl   - Benign keratosis-like lesions
+  4. df    - Dermatofibroma
+  5. mel   - Melanoma
+  6. nv    - Melanocytic nevi
+  7. vasc  - Vascular lesions
+
+Split: 70% train / 15% validation / 15% test (stratified by class)
+
+Preprocessing applied:
+  - Resize all images to 128x128 pixels
+  - Normalization (mean=0.5, std=0.5 per channel)
+  - Training set augmentation: random horizontal flip, random rotation
+    (+/-15 degrees), color jitter (brightness/contrast +/-0.2)
+  - Validation/test sets: resize + normalize only (no augmentation)
+
+Note on class imbalance:
+  The 'nv' (melanocytic nevi) class makes up the large majority of
+  samples (~67%), while classes like 'df' (dermatofibroma) have only
+  ~1% of samples. This imbalance is documented in
+  results/dataset_distribution.csv and discussed in the final report.
+
+See results/dataset_distribution.csv for exact per-class, per-split counts.
