@@ -1,0 +1,9 @@
+label,train,val,test,total
+melanocytic_nevi,4693,1006,1006,6705
+melanoma,779,167,167,1113
+benign_keratosis,769,165,165,1099
+basal_cell_carcinoma,360,77,77,514
+actinic_keratoses,229,49,49,327
+vascular_lesions,99,21,22,142
+dermatofibroma,81,17,17,115
+TOTAL,7010,1502,1503,10015
